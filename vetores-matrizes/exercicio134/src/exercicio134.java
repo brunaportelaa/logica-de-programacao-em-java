@@ -1,3 +1,5 @@
+import java.util.Scanner;
+
 public class exercicio134 {
 
     public static void main(String[] args) {
@@ -11,13 +13,15 @@ public class exercicio134 {
 
         int soma = somarElementos(matriz);
         printInt(soma);
+
+
     }
 
     public static int somarElementos(int[][] matriz){
         int soma = 0;
         for (int i = 0; i < matriz.length; i++) {
             for (int j = 0; j < matriz[i].length; j++) {
-                if (j == i - 1){
+                if ( j == i-1) {
                     soma += matriz[i][j];
                 }
             }
@@ -28,5 +32,15 @@ public class exercicio134 {
     public static void printInt(int inteiro){
         System.out.println(inteiro);
     }
+
+    public static int lerInt(String msg) {
+        System.out.println(msg);
+        return lerInt();
+    }
+
+    public static int lerInt() {
+        return new Scanner(System.in).nextInt();
+    }
+
 
 }
