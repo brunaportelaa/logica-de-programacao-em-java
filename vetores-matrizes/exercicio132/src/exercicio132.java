@@ -8,14 +8,21 @@ public class exercicio132 {
                 {7, 8, 9}
         };
 
-        int[][] matriz2 = (calcularTransposta(matriz));
+        int[][] matrizTransposta = transformarTransposta(matriz);
 
-        for (int i = 0; i < matriz2.length; i++) {
-            System.out.println( matriz2[i][0] + " " + matriz2[i][1] + " " + matriz2[i][2]);
+        print(matrizTransposta);
+    }
+
+    public static void print(int[][] matriz) {
+        for (int i = 0; i < matriz.length; i++) {
+            for (int j = 0; j < matriz[i].length; j++) {
+                System.out.println( matriz[i][j]);
+            }
+            System.out.println("\n");
         }
     }
 
-    public static int[][] calcularTransposta(int[][] matriz) {
+    public static int[][] transformarTransposta(int[][] matriz) {
         int[][] transposta = new int[3][3];
         for (int i = 0; i < matriz.length; i++) {
             for (int j = 0; j < matriz[i].length; j++) {
