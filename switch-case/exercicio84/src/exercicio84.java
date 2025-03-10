@@ -58,7 +58,9 @@ public class exercicio84 {
 
 }
 
-
+/**
+ * Classe que representa uma conta bancária com métodos para depósito, saque e exibição de saldo.
+ */
 class ContaBancaria {
     int id;
     String nomeUsuario;
@@ -78,6 +80,10 @@ class ContaBancaria {
         }
     }
 
+    /**
+     * Método para sacar um valor da conta, desde que haja saldo suficiente.
+     * @param valorTransacao Valor a ser sacado.
+     */
     public void sacar( double valorTransacao) {
         if ( valorTransacao <= saldo && valorTransacao > 0) {
             saldo -= valorTransacao;
@@ -88,6 +94,9 @@ class ContaBancaria {
         }
     }
 
+    /**
+     * Método para exibir o saldo atual da conta.
+     */
     public void exibirSaldo(){
         System.out.println("Saldo atual: R$" + saldo);
     }
