@@ -1,8 +1,12 @@
 import java.util.Scanner;
 
+/**
+ * Recebe o nome de um aluno, duas notas, calcula a média e informa se ele está aprovado ou reprovado.
+ */
 public class exercicio02 {
 
     final static int NOTA_DE_CORTE = 7;
+
 
     public static void main(String[] args) {
 
