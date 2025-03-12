@@ -1,0 +1,3 @@
+Criar classe leitora com  lerDouble e ler int.
+Validação de nota dentro do leitor.
+Aluno aluno = lerAluno();

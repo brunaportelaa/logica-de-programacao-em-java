@@ -32,7 +32,6 @@ public class exercicio03 {
         return impares;
     }
 
-
     public static int[] gerarArray(int length) {
         int[] array = new int[length];
         for (int i = 0; i < length; i++) {
@@ -46,7 +45,6 @@ public class exercicio03 {
         }
         return array;
     }
-
 
     public static void printArray(int[] array) {
         for (int k = 0; k < array.length; k++) {
