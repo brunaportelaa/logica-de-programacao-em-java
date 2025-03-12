@@ -36,7 +36,13 @@ public class exercicio03 {
     public static int[] gerarArray(int length) {
         int[] array = new int[length];
         for (int i = 0; i < length; i++) {
-            array[i] = lerInt("Por favor, insira um número inteiro para compor o array:");
+            int inputInteiro = lerInt("Por favor, insira um número inteiro para compor o array:");
+            if (inputInteiro > 0) {
+                array[i] = inputInteiro;
+            } else {
+                System.out.println("Número inválido.");
+                i--;
+            }
         }
         return array;
     }
