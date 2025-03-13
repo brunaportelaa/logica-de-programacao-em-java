@@ -1,5 +1,5 @@
 public class Aluno {
     String nome;
-    int matricula;
+    long matricula;
     boolean bolsista;
 }

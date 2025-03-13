@@ -19,6 +19,15 @@ public class Leitor {
         return lerInt();
     }
 
+    public static long lerLong(){
+        return new Scanner(System.in).nextLong();
+    }
+
+    public static long lerLong(String msg){
+        System.out.println(msg);
+        return lerLong();
+    }
+
     public static Turma lerTurma(String msg){
         int qtdAlunos = lerInt(msg);
         return lerTurma(qtdAlunos);
@@ -37,7 +46,7 @@ public class Leitor {
     public static Aluno lerAluno(){
         Aluno aluno = new Aluno();
         aluno.nome = lerString("Informe o nome do aluno");
-        aluno.matricula = lerInt("Informe o número de matrícula do aluno");
+        aluno.matricula = lerLong("Informe o número de matrícula do aluno");
         aluno.bolsista = (lerInt("Informe 1 para aluno bolsista e 2 para aluno regular") == 1);
         return aluno;
     }

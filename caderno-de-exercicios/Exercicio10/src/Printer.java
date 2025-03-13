@@ -9,7 +9,7 @@ public class Printer {
         for (Piloto piloto : corrida.pilotos) {
             printPiloto(piloto);
         }
-        System.out.println("O tempo médio da corrida foi de: " + corrida.media);
+        System.out.println("O tempo médio da corrida foi de: " + corrida.mediaTempo);
         System.out.println("O piloto mais rápido foi " + corrida.pilotoMaisRapido.nome + " com o tempo de " + corrida.pilotoMaisRapido.tempoVolta + " minutos.");
         System.out.println("O piloto mais lento foi " + corrida.pilotoMaisLento.nome + " com o tempo de " + corrida.pilotoMaisLento.tempoVolta + " minutos.");
 

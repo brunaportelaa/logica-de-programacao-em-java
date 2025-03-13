@@ -7,15 +7,14 @@ public class ServiceCorrida {
             somaTempos += piloto.tempoVolta;
         }
 
-        corrida.media = somaTempos / qtdCorridas;
-        return corrida.media;
+        corrida.mediaTempo = somaTempos / qtdCorridas;
+        return corrida.mediaTempo;
     }
 
     public static void rankearPilotos(Corrida corrida){
-        int size = corrida.pilotos.length;
 
-        for (int i = 0; i < size - 1; i++) {
-            for (int j = 0; j < size - i - 1; j++) {
+        for (int i = 0; i < corrida.pilotos.length - 1; i++) {
+            for (int j = 0; j < corrida.pilotos.length - i - 1; j++) {
                 if (corrida.pilotos[j].tempoVolta > corrida.pilotos[j + 1].tempoVolta) {
                     Piloto temp = corrida.pilotos[j];
                     corrida.pilotos[j] = corrida.pilotos[j + 1];
