@@ -30,11 +30,6 @@ public class Leitor {
         turma.alunos = new Aluno[totalAlunos];
         for ( int i = 0; i < totalAlunos; i++){
             turma.alunos[i] = lerAluno();
-            if (turma.alunos[i].bolsista) {
-                turma.totalBolsistas++;
-            } else {
-                turma.totalRegulares++;
-            }
         }
         return turma;
     }

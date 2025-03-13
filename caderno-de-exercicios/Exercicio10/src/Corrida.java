@@ -3,5 +3,4 @@ public class Corrida {
     public Piloto pilotoMaisRapido;
     public Piloto pilotoMaisLento;
     public static double media;
-    public Piloto[] rankingPorTempo;
 }
