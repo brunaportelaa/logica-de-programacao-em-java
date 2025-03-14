@@ -4,5 +4,4 @@ public class Aluno {
     double notaMatematica;
     double media;
     boolean isAprovado;
-
 }
