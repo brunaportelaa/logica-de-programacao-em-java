@@ -1,0 +1,116 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="0d3d0b8f-28e5-41a8-951c-0b74c4559f7a" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/../Aula04/Exercicio01/src/Aplicacao.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Aula04/Exercicio01/src/Leitor.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Aula04/Exercicio01/src/Printer.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Aula04/Exercicio01/src/ServiceCalculadora.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../exercicio09/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Exercicio04/.gitignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Exercicio04/.idea/.gitignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Exercicio04/.idea/misc.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Exercicio04/.idea/modules.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Exercicio04/.idea/vcs.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Exercicio04/Exercicio04.iml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Exercicio04/src/Exercicio04.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Exercicio06/.gitignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Exercicio06/.idea/.gitignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Exercicio06/.idea/misc.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Exercicio06/.idea/modules.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Exercicio06/.idea/vcs.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Exercicio06/Exercicio06.iml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Exercicio06/src/MyMath.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Exercicio10/.gitignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Exercicio10/.idea/.gitignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Exercicio10/.idea/misc.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Exercicio10/.idea/modules.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Exercicio10/.idea/vcs.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Exercicio10/Exercicio10.iml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Exercicio10/src/Aplicacao.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Exercicio10/src/Corrida.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Exercicio10/src/Leitor.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Exercicio10/src/Piloto.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Exercicio10/src/Printer.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Exercicio10/src/ServiceCorrida.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../exercicio01/.gitignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../exercicio01/.idea/.gitignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../exercicio01/.idea/misc.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../exercicio01/.idea/modules.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../exercicio01/.idea/vcs.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../exercicio01/exercicio01.iml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../exercicio01/src/exercicio01.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../exercicio02/.gitignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../exercicio02/.idea/.gitignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../exercicio02/.idea/misc.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../exercicio02/.idea/modules.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../exercicio02/.idea/vcs.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../exercicio02/exercicio02.iml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../exercicio02/src/Aluno.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../exercicio02/src/Leitor.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../exercicio02/src/correcoes.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../exercicio02/src/exercicio02.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../exercicio03/.gitignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../exercicio03/.idea/.gitignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../exercicio03/.idea/misc.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../exercicio03/.idea/modules.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../exercicio03/.idea/vcs.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../exercicio03/exercicio03.iml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../exercicio03/src/exercicio03.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../exercicio05/.gitignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../exercicio05/.idea/.gitignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../exercicio05/.idea/misc.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../exercicio05/.idea/modules.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../exercicio05/.idea/vcs.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../exercicio05/exercicio05.iml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../exercicio05/src/Exercicio05.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../exercicio09/.gitignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../exercicio09/.idea/.gitignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../exercicio09/.idea/misc.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../exercicio09/.idea/modules.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../exercicio09/.idea/vcs.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../exercicio09/Exercicio09.iml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../exercicio09/src/Aluno.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../exercicio09/src/Aplicacao.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../exercicio09/src/Leitor.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../exercicio09/src/Printer.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../exercicio09/src/ServiceTurma.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../exercicio09/src/Turma.java" beforeDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/../.." />
+  </component>
+  <component name="ProjectColorInfo"><![CDATA[{
+  "associatedIndex": 7
+}]]></component>
+  <component name="ProjectId" id="2uJLDFHUbdis9XqtDG3iMz1nouR" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "RunOnceActivity.git.unshallow": "true",
+    "git-widget-placeholder": "main",
+    "kotlin-language-version-configured": "true",
+    "last_opened_file_path": "/Users/cidadania4u/IdeaProjects/logica-de-programacao-em-java/caderno-de-exercicios/Unidade01"
+  }
+}]]></component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="0d3d0b8f-28e5-41a8-951c-0b74c4559f7a" name="Changes" comment="" />
+      <created>1741961608338</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1741961608338</updated>
+    </task>
+    <servers />
+  </component>
+</project>
