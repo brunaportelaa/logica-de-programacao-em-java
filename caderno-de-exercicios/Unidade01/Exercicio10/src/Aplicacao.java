@@ -5,6 +5,6 @@ public class Aplicacao {
         ServiceCorrida.rankearPilotos(corrida);
         ServiceCorrida.atribuirMaisLento(corrida);
         ServiceCorrida.atribuirMaisRapido(corrida);
-        Printer.printCorrida(corrida);
+        Printer.print(corrida);
     }
 }
