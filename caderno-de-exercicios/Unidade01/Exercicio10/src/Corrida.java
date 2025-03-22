@@ -1,37 +1,37 @@
+import java.util.Arrays;
+
 public class Corrida {
-    public Piloto[] pilotos;
+    Piloto[] pilotos;
 
-
-    public void rankearPilotos(){
-        for (int i = 0; i < this.pilotos.length - 1; i++) {
-            for (int j = 0; j < this.pilotos.length - i - 1; j++) {
-                if (this.pilotos[j].tempoVolta > this.pilotos[j + 1].tempoVolta) {
-                    Piloto temp = this.pilotos[j];
-                    this.pilotos[j] = this.pilotos[j + 1];
-                    this.pilotos[j + 1] = temp;
+    public Piloto[] rankearPilotos(){
+        Piloto[] pilotosRankeados = Arrays.copyOf(this.pilotos, pilotos.length);
+        for (int i = 0; i < pilotosRankeados.length - 1; i++) {
+            for (int j = 0; j < pilotosRankeados.length - i - 1; j++) {
+                if (pilotosRankeados[j].tempoVolta > pilotosRankeados[j + 1].tempoVolta) {
+                    Piloto temp = pilotosRankeados[j];
+                    pilotosRankeados[j] = pilotosRankeados[j + 1];
+                    pilotosRankeados[j + 1] = temp;
                 }
             }
         }
+        return pilotosRankeados;
     }
+
     public Piloto getPilotoMaisRapido(){
-        this.rankearPilotos();
-        return this.pilotos[0];
+        return this.rankearPilotos()[0];
     };
 
     public Piloto getPilotoMaisLento(){
-        this.rankearPilotos();
-        return this.pilotos[this.pilotos.length - 1];
+        return this.rankearPilotos()[this.rankearPilotos().length - 1];
     };
 
     public double getMedia(){
-        double qtdCorridas = 0;
         double somaTempos = 0;
 
         for (Piloto piloto : pilotos){
-            qtdCorridas++;
             somaTempos += piloto.tempoVolta;
         }
 
-        return somaTempos / qtdCorridas;
+        return somaTempos / this.pilotos.length;
     }
 }
