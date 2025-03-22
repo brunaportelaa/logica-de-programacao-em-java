@@ -3,5 +3,4 @@ public class Franquia {
     int diaExpiracao;
     double preco;
     String nomeEmpresa;
-    int idEmpresa;
 }

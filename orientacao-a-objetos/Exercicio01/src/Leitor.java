@@ -2,6 +2,17 @@ import java.util.Scanner;
 
 public class Leitor {
 
+    public static double lerDouble(String msg, double min){
+        double valor;
+        do {
+            valor = lerDouble(msg);
+            if(valor < min){
+                System.out.println("Valor inválido.");
+            }
+        } while (valor < min);
+        return valor;
+    }
+
     public static double lerDouble(String msg, double min, double max){
         double valor;
         do {
@@ -20,6 +31,17 @@ public class Leitor {
     public static double lerDouble(String msg){
         System.out.println(msg);
         return lerDouble();
+    }
+
+    public static int lerInt(String msg, int min) {
+        int valor;
+        do {
+            valor = lerInt(msg);
+            if (valor < min) {
+                System.out.println("Valor inválido.");
+            }
+        } while (valor < min);
+        return valor;
     }
 
     public static int lerInt(String msg, int min, int max) {
