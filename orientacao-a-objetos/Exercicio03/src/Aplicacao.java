@@ -1,10 +1,5 @@
-import java.io.File;
-import java.io.FileWriter;
-import java.io.IOException;
-
 public class Aplicacao {
     public static void main(String[] args) {
-
         Universidade universidade = View.lerUniversidade();
         int tipoRelatorio = 1;
         while (tipoRelatorio > 0 && tipoRelatorio <= 5) {
@@ -20,21 +15,14 @@ public class Aplicacao {
                     Printer.print(labsSelecionados);
                     break;
                 case 3:
-                    int counter = 0;
-                    for (Laboratorio laboratorio : universidade.laboratorios) {
-                        counter += laboratorio.countByTipoItem(1);
-                    }
-                    System.out.println("O total de itens do tipo TECNOLOGIA é: " + counter);
+                    int tipoItens = Leitor.lerInt("Informe 1 para cargo TECNOLOGIA e 2 para cargo OUTROS","Valor inválido. Informe 1 para cargo TECNOLOGIA e 2 para cargo OUTROS", 1, 2);
+                    System.out.println("O total de itens do tipo selecionado é: " + universidade.countItensByTipo(tipoItens));
                     break;
                 case 4:
                     System.out.println("O custo total da Universidade com seus laboratórios é de: " + universidade.somarCusto());
                     break;
                 case 5:
-                    for (Laboratorio laboratorio : universidade.laboratorios) {
-                        System.out.println(laboratorio.nome);
-                        System.out.println("Local:"+ laboratorio.local);
-                        System.out.println("Total de Itens: " + laboratorio.countItens());
-                    }
+                    universidade.getLocalItens();
                     break;
                 default:
                     System.out.println("Valor inválido. Programa encerrado.");
