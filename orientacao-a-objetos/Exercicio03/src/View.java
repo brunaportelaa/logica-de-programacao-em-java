@@ -31,7 +31,7 @@ public class View {
         Profissional profissional = new Profissional();
         profissional.nome = Leitor.lerString("Informe o nome do profissional:");
         profissional.matricula = Leitor.lerInt("Informe a matrícula do profissional:");
-        profissional.setCargo(Leitor.lerInt("Informe 1 para cargo TÉCNICO e 2 para cargo ANALISTA","Valor inválido. Informe 1 para cargo TÉCNICO e 2 para cargo ANALISTA", 1, 2));
+        profissional.cargo = Leitor.lerInt("Informe 1 para cargo TÉCNICO e 2 para cargo ANALISTA","Valor inválido. Informe 1 para cargo TÉCNICO e 2 para cargo ANALISTA", 1, 2);
         return profissional;
     }
 
@@ -46,10 +46,10 @@ public class View {
 
     public static Item lerItem() {
         Item item = new Item();
-        item.codigo = Leitor.lerInt("Informe o código do item: ", 1);
         item.descricao = Leitor.lerString("Informe a descrição do item: ");
+        item.codigo = Leitor.lerInt("Informe o código do item: ", 1);
         item.preco = Leitor.lerDouble("Informe o preço do item: ", 0);
-        item.setTipo(Leitor.lerInt("Informe 1 para cargo TECNOLOGIA e 2 para cargo OUTROS","Valor inválido. Informe 1 para cargo TECNOLOGIA e 2 para cargo OUTROS", 1, 2));
+        item.tipo = Leitor.lerInt("Informe 1 para cargo TECNOLOGIA e 2 para cargo OUTROS","Valor inválido. Informe 1 para cargo TECNOLOGIA e 2 para cargo OUTROS", 1, 2);
         return item;
     }
 

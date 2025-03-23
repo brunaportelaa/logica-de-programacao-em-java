@@ -2,20 +2,20 @@ public class Item {
     String descricao;
     int codigo;
     double preco;
-    String tipo;
+    int tipo;
 
-    public void setTipo(int tipo) {
+    public String getTipo(int tipo) {
         if (tipo == 1) {
-            this.tipo = "TECNOLOGIA";
+            return "TECNOLOGIA";
         } else {
-            this.tipo = "OUTROS";
+            return "OUTROS";
         }
     }
 
     public String toString() {
-        return  "\nDescrição: " + this.descricao +
+        return  "Descrição: " + this.descricao +
                 "\nCódigo: " + this.codigo +
                 "\nPreço: " + this.preco +
-                "\nTipo: " + this.tipo;
+                "\nTipo: " + this.tipo + "\n";
     }
 }

@@ -1,19 +1,19 @@
 public class Profissional {
     String nome;
     int matricula;
-    String cargo;
+    int cargo;
 
-    public void setCargo(int cargo) {
+    public String getCargo() {
         if (cargo == 1) {
-            this.cargo = "TÉCNICO";
+            return "TÉCNICO";
         } else {
-            this.cargo = "ANALISTA";
+            return "ANALISTA";
         }
     }
 
     public String toString(){
         return "Nome: " + this.nome +
                 "\nMatrícula: " + this.matricula +
-                "\nCargo: " + this.cargo;
+                "\nCargo: " + getCargo();
     }
 }
