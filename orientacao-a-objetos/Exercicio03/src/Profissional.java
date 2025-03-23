@@ -9,6 +9,11 @@ public class Profissional {
         } else {
             this.cargo = "ANALISTA";
         }
+    }
 
+    public String toString(){
+        return "Nome: " + this.nome +
+                "\nMatrícula: " + this.matricula +
+                "\nCargo: " + this.cargo;
     }
 }
