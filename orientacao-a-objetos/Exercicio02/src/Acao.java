@@ -1,7 +1,12 @@
 public class Acao {
+    int id;
     String descricao;
     int mes;
     int ano;
+
+    public void gerarId(){
+        this.id = (int)Math.random() * 10000;
+    }
 
     public int getTrimestre(){
         int trimestre = 0;
@@ -38,5 +43,13 @@ public class Acao {
             isPrioritaria = false;
         }
         return isPrioritaria;
+    }
+
+    public String toString(){
+        String string = "Descrição: " + this.descricao +
+                "\nMês: " + this.mes +
+                "\nAno: " + this.ano +
+                "\nPrioridade: " + (this.getPrioridade() ? "PRIORITÁRIA" : "NÃO PRIORITÁRIA");
+        return string.toLowerCase();
     }
 }
