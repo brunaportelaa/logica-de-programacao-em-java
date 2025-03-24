@@ -22,7 +22,7 @@ public class Aplicacao {
                     System.out.println("O custo total da Universidade com seus laboratórios é de: " + universidade.somarCusto());
                     break;
                 case 5:
-                    universidade.getLocalItens();
+//                    universidade.getLocalItens();
                     break;
                 default:
                     System.out.println("Valor inválido. Programa encerrado.");

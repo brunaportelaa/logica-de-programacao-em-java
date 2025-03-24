@@ -1,4 +1,6 @@
 public class Acao {
+    final int PRAZO_MIN_PRIORIDADE = 2015;
+    final int PRAZO_MAX_PRIORIDADE = 2016;
     int id;
     String descricao;
     int mes;
@@ -9,47 +11,41 @@ public class Acao {
     }
 
     public int getTrimestre(){
-        int trimestre = 0;
         switch (mes) {
             case 1:
             case 2:
             case 3:
-                trimestre = 1;
-                break;
+                return 1;
             case 4:
             case 5:
             case 6:
-                trimestre = 2;
-                break;
+                return 2;
             case 7:
             case 8:
             case 9:
-                trimestre = 3;
-                break;
+                return 3;
             case 10:
             case 11:
             case 12:
-                trimestre = 4;
-                break;
+                return 4;
+            default:
+                return 0;
         }
-        return trimestre;
     }
 
-    public boolean getPrioridade(){
-        boolean isPrioritaria;
-        if (ano <= 2016) {
-            isPrioritaria = true;
+    public boolean isPrioritaria(){
+        if (ano >= PRAZO_MIN_PRIORIDADE && ano <= PRAZO_MAX_PRIORIDADE) {
+            return true;
         } else {
-            isPrioritaria = false;
+            return false;
         }
-        return isPrioritaria;
     }
 
     public String toString(){
         String string = "Descrição: " + this.descricao +
                 "\nMês: " + this.mes +
                 "\nAno: " + this.ano +
-                "\nPrioridade: " + (this.getPrioridade() ? "PRIORITÁRIA" : "NÃO PRIORITÁRIA");
+                "\nPrioridade: " + (this.isPrioritaria() ? "PRIORITÁRIA" : "NÃO PRIORITÁRIA");
         return string.toLowerCase();
     }
 }

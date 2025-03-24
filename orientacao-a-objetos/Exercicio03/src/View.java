@@ -1,19 +1,28 @@
 import java.util.ArrayList;
+import java.util.Arrays;
 
 public class View {
     public static Universidade lerUniversidade(){
         System.out.println("CADASTRO DE UNIVERSIDADE - LOGÍSTICA DE LABORATÓRIOS");
         Universidade universidade = new Universidade();
         universidade.nome = Leitor.lerString("Informe o nome da universidade: ");
-        universidade.laboratorios = lerLaboratorios(universidade);
+        universidade.laboratorios = new Laboratorio[0];
+        universidade.laboratorios = lerLaboratorios();
         return universidade;
     }
 
-    public static Laboratorio[] lerLaboratorios(Universidade universidade) {
-        int qtdLaboratorios = Leitor.lerInt("Quantos laboratórios serão cadastrados para " + universidade.nome + "?");
-        Laboratorio[] laboratorios = new Laboratorio[qtdLaboratorios];
-        for (int i = 0; i < qtdLaboratorios; i++) {
-            laboratorios[i] = lerLaboratorio();
+    public static Laboratorio[] lerLaboratorios() {
+        boolean continuar = true;
+        Laboratorio[] laboratorios = new Laboratorio[0];
+        while (continuar) {
+            laboratorios = Arrays.copyOf(laboratorios, (laboratorios.length + 1));
+            laboratorios[laboratorios.length - 1] = View.lerLaboratorio();
+            int desejaContinuar = Leitor.lerInt("Pressione 1 para continuar ou qualquer outro valor para finalizar o cadastro de laboratórios.");
+            if (desejaContinuar == 1) {
+                continuar = true;
+            } else {
+                continuar = false;
+            }
         }
         return laboratorios;
     }

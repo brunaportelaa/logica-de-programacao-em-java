@@ -44,8 +44,13 @@ public class UnidadeAdministrativa {
         return acoesSelecionadas;
     }
 
-    public ArrayList<Acao> sortByTrimestre(){
+    public ArrayList<Acao> sortByTrimestre(int trimestre){
         ArrayList<Acao> acoesSelecionadas = new ArrayList<Acao>();
+        for (Acao acao : this.acoes) {
+            if (acao.getTrimestre() == trimestre) {
+                acoesSelecionadas.add(acao);
+            }
+        }
         return acoesSelecionadas;
     }
 

@@ -42,7 +42,7 @@ public class Universidade {
         return custoTotal;
     }
 
-    public void getLocalItens() {
+    public void getItensByLocal() {
         for (Laboratorio laboratorio : this.laboratorios) {
             System.out.println(laboratorio.nome);
             System.out.println("Local:"+ laboratorio.local);
