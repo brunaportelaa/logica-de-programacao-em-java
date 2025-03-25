@@ -1,5 +1,3 @@
-import java.util.ArrayList;
-
 public class Laboratorio {
     String nome;
     Profissional responsavel;
@@ -25,9 +23,9 @@ public class Laboratorio {
     }
 
     public String toString() {
-        return "Nome: " + this.nome +
-                "\nProfissional responsável: \n".toUpperCase() + responsavel.toString() +
-                "\nLocal: " + this.local;
+        return "Nome: " + this.nome + "\n" +
+                "\nProfissional responsável: \n".toUpperCase() + responsavel.toString() + "\n" +
+                "\nLocal: " + this.local + "\n";
     }
 
     public int countItens() {

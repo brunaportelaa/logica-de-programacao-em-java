@@ -10,8 +10,7 @@ public class Aplicacao {
                     break;
                 case 2:
                     int cargoResponsavel = Leitor.lerInt("Informe 1 para cargo TÉCNICO e 2 para cargo ANALISTA", "Valor inválido. Informe 1 para cargo TÉCNICO e 2 para cargo ANALISTA", 1, 2);
-                    int qtdLaboratorios = universidade.countByResponsavel(cargoResponsavel);
-                    Laboratorio[] labsSelecionados = universidade.sortByResponsavel(qtdLaboratorios, cargoResponsavel);
+                    Laboratorio[] labsSelecionados = universidade.sortByTipoResponsavel( cargoResponsavel);
                     Printer.print(labsSelecionados);
                     break;
                 case 3:
@@ -22,10 +21,25 @@ public class Aplicacao {
                     System.out.println("O custo total da Universidade com seus laboratórios é de: " + universidade.somarCusto());
                     break;
                 case 5:
-//                    universidade.getLocalItens();
+                    int opcao = Leitor.lerInt("Para qual local gostaria de averiguar a quantidade de itens?\n[1] - Inserir local\n[2] - Todos", "Valor inválido, insira: \n[1] - Inserir local\n[2] - Todos", 1, 2);
+                    if (opcao == 1) {
+                        int totalItens = universidade.countItensByLocal(Leitor.lerString("Informe o local: "));
+                        System.out.println("Quantidade de itens: " + totalItens);
+                    } else {
+                        if (opcao == 2) {
+                            for (Laboratorio laboratorio : universidade.laboratorios) {
+                                System.out.println("Local: " + laboratorio.local);
+                                System.out.println("Quantidade de itens: " + laboratorio.countItens());
+                            }
+                        } else {
+                            System.out.println("Operação inválida.");
+                        }
+                    }
+
                     break;
                 default:
                     System.out.println("Valor inválido. Programa encerrado.");
+                    tipoRelatorio = 6;
             }
         }
     }

@@ -14,7 +14,8 @@ public class Universidade {
         return counter;
     }
 
-    public Laboratorio[] sortByResponsavel(int qtdLaboratorios, int cargoResponsavel){
+    public Laboratorio[] sortByTipoResponsavel(int cargoResponsavel){
+        int qtdLaboratorios = this.countByResponsavel(cargoResponsavel);
         Laboratorio[] selecionados = new Laboratorio[qtdLaboratorios];
         int j = 0;
         for (Laboratorio laboratorio : this.laboratorios) {
@@ -37,17 +38,20 @@ public class Universidade {
     public double somarCusto(){
         int custoTotal = 0;
         for (Laboratorio laboratorio : this.laboratorios) {
-            custoTotal += somarCusto();
+            custoTotal += laboratorio.somarCusto();
         }
         return custoTotal;
     }
 
-    public void getItensByLocal() {
+
+    public int countItensByLocal(String local) {
+        int totalItens = 0;
         for (Laboratorio laboratorio : this.laboratorios) {
-            System.out.println(laboratorio.nome);
-            System.out.println("Local:"+ laboratorio.local);
-            System.out.println("Total de Itens: " + laboratorio.countItens());
+            if (laboratorio.local == local) {
+                totalItens += laboratorio.itens.length;
+            }
         }
+        return totalItens;
     }
 }
 
