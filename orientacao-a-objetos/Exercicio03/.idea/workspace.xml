@@ -5,13 +5,15 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="c98b7922-a867-4fdd-924b-25f9d3eac92a" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/../Exercicio4/src/App.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../Exercicio4/src/GrupoPlacas.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../Exercicio4/src/Leitor.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../Exercicio4/src/Placa.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../Exercicio4/src/View.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../Exercicio5/.idea/.gitignore" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../Exercicio5/src/Leitor.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Exercicio5/src/App.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Exercicio5/src/Atleta.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Exercicio5/src/Corrida.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Exercicio5/src/Printer.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Exercicio5/src/View.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Universidade.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Universidade.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/View.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/View.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Exercicio5/src/Leitor.java" beforeDir="false" afterPath="$PROJECT_DIR$/../Exercicio5/src/Leitor.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -49,18 +51,18 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "Application.Aplicacao.executor": "Run",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "RunOnceActivity.git.unshallow": "true",
-    "git-widget-placeholder": "main",
-    "kotlin-language-version-configured": "true",
-    "project.structure.last.edited": "Project",
-    "project.structure.proportion": "0.0",
-    "project.structure.side.proportion": "0.0"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;Application.Aplicacao.executor&quot;: &quot;Run&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.git.unshallow&quot;: &quot;true&quot;,
+    &quot;git-widget-placeholder&quot;: &quot;main&quot;,
+    &quot;kotlin-language-version-configured&quot;: &quot;true&quot;,
+    &quot;project.structure.last.edited&quot;: &quot;Project&quot;,
+    &quot;project.structure.proportion&quot;: &quot;0.0&quot;,
+    &quot;project.structure.side.proportion&quot;: &quot;0.0&quot;
   }
-}]]></component>
+}</component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">

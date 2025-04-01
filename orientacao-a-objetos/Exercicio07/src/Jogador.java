@@ -1,0 +1,108 @@
+public class Jogador {
+    private final int LIMITE_FRACO = 15;
+    private final int LIMITE_BOM = 31;
+    private final int MAIORIDADE = 18;
+    private String nome;
+    private int idade;
+    private int qtdGols;
+    private String pais;
+
+    public Jogador(int qtdGols) {
+        this.qtdGols = qtdGols;
+    }
+
+    public Jogador(String nome, int idade, int qtdGols, String pais) {
+        this.nome = nome;
+        this.idade = idade;
+        this.qtdGols = qtdGols;
+        this.pais = pais;
+    }
+
+    public String getNome(){
+        return this.nome;
+    }
+
+    public void setNome(String nome) {
+        this.nome = nome;
+    }
+
+    public int getIdade(){
+        return this.idade;
+    }
+
+    public void setIdade(int idade) {
+        this.idade = idade;
+    }
+
+    public int getQtdGols(){
+        return this.qtdGols;
+    }
+
+    public void setQtdGols(int qtdGols) {
+        this.qtdGols = qtdGols;
+    }
+
+    public void setPais(String pais) {
+        this.pais = pais;
+    }
+
+    public String getPais(){
+        return this.pais;
+    }
+
+    /**
+     * entrada: qtdGols
+     * @return
+     * 3 para fraco (<15 gols), 2 para mediano (15<x<31 gols), 1 para bom (>31 gols)
+     */
+    public int getQualificacao() {
+        int qualificacao;
+        if (this.qtdGols < LIMITE_FRACO) {
+            qualificacao = 3;
+        } else {
+            if (this.qtdGols >= LIMITE_FRACO && this.qtdGols <= LIMITE_BOM) {
+                qualificacao = 2;
+            } else {
+                qualificacao = 1;
+            }
+        }
+        return qualificacao;
+    }
+
+    public String getQualificacaoDescricao(int qualificacao) {
+        if (this.getQualificacao() == 3) {
+            return "FRACO";
+        } else {
+            if (this.getQualificacao() == 2) {
+                return "MEDIANO";
+            } else {
+                return "BOM";
+            }
+        }
+    }
+
+    public double getSalario() {
+        if (this.getQualificacao() == 3) {
+            return 500.00;
+        } else {
+            if (this.getQualificacao() == 2) {
+                return 5000.00;
+            } else {
+                if (this.getQualificacao() == 1) {
+                    return 10000.00;
+                } else {
+                    return 0;
+                }
+            }
+        }
+    }
+
+    public boolean isMaiorDeIdade() {
+        if (this.idade >= MAIORIDADE) {
+            return true;
+        } else {
+            return false;
+        }
+    }
+
+}

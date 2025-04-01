@@ -3,14 +3,14 @@ import java.util.Arrays;
 public class View {
     public static GrupoPlacas cadastrarPlacas() {
         GrupoPlacas grupo = new GrupoPlacas();
-        grupo.placas = new Placa[0];
+        grupo.setPlacas(new Placa[0]);
         boolean continuar = true;
         do {
             String codigo = Leitor.lerString("Insira um código alfanumérico para a placa: ");
             if (grupo.validarCodigo(codigo)) {
-                Placa[] placas = Arrays.copyOf(grupo.placas, grupo.placas.length + 1);
+                Placa[] placas = Arrays.copyOf(grupo.getPlacas(), grupo.getPlacas().length + 1);
                 placas[placas.length - 1] = View.cadastrarPlaca(codigo);
-                grupo.placas = placas;
+                grupo.setPlacas(placas);
             } else {
                 System.out.println("Este código já foi utilizado. Por favor insira um novo.");
             }
@@ -26,13 +26,13 @@ public class View {
 
     public static Placa cadastrarPlaca(String codigo) {
         Placa placa = new Placa(codigo);
-        placa.entradasAnalogicas = Leitor.lerInt("Quantas entradas analógicas possui a placa?", 0);
-        placa.pinos = Leitor.lerInt("Quantos pinos digitais possui a placa?", 0);
+        placa.setEntradasAnalogicas(Leitor.lerInt("Quantas entradas analógicas possui a placa?", 0));
+        placa.setPinos(Leitor.lerInt("Quantos pinos digitais possui a placa?", 0));
         int produzSinalMLP = Leitor.lerInt("Insira 1 se a placa produz sinal MLP, e 0 se não produz", "Valor inválido. Insira 1 se a placa produzsinal MLP, e 0 se não produz.", 0, 1);
         if (produzSinalMLP == 0) {
-            placa.produzSinalMLP = false;
+            placa.setProduzSinalMLP(false);
         } else {
-            placa.produzSinalMLP = true;
+            placa.setProduzSinalMLP(true);
         }
         return placa;
     }

@@ -1,8 +1,22 @@
-import java.util.ArrayList;
+import java.util.Arrays;
 
 public class Universidade {
     String nome;
     Laboratorio[] laboratorios;
+
+    public Universidade() {
+        this.laboratorios = new Laboratorio[0];
+    }
+
+    public Universidade(Laboratorio[] laboratorios) {
+        this.laboratorios = laboratorios;
+    }
+
+    public void adicionar(Laboratorio laboratorio) {
+        Laboratorio[] novoLaboratorios = Arrays.copyOf(laboratorios, (laboratorios.length + 1));
+        novoLaboratorios[laboratorios.length - 1] = laboratorio;
+        laboratorios = novoLaboratorios;
+    }
 
     public int countByResponsavel(int cargoResponsavel) {
         int counter = 0;

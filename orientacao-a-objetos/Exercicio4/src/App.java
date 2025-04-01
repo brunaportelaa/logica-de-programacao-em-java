@@ -10,7 +10,7 @@ public class App {
             int operacao = Leitor.lerInt("Qual operação deseja realizar?\n[1] - Visualizar todas as placas\n[2] - Visualizar o custo total das placas\n[3] - Visualizar placas de acordo com a produção de sinal MLP\n[4] - Visualizar o custo das placas de acordo com a produção de sinal MLP.\nDigite qualquer outro número para encerrar o programa.");
             switch (operacao) {
                 case 1:
-                    Printer.print(grupoPlacas.placas);
+                    Printer.print(grupoPlacas.getPlacas());
                     break;
                 case 2:
                     System.out.println("O custo total das placas é de: R$" + grupoPlacas.calcularCustoTotal());

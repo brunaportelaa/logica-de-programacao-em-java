@@ -13,6 +13,17 @@ public class Leitor {
         return valor;
     }
 
+    public static double lerDouble(String msg, double min, double max){
+        double valor;
+        do {
+            valor = lerDouble(msg);
+            if(valor < min || valor > max){
+                System.out.println("Valor inválido.");
+            }
+        } while (valor < min || valor > max);
+        return valor;
+    }
+
     public static double lerDouble(){
         return new Scanner(System.in).nextDouble();
     }
@@ -22,10 +33,10 @@ public class Leitor {
         return lerDouble();
     }
 
-    public static long lerLong(String msg, long min) {
-        long valor;
+    public static int lerInt(String msg, int min) {
+        int valor;
         do {
-            valor = lerLong(msg);
+            valor = lerInt(msg);
             if (valor < min) {
                 System.out.println("Valor inválido.");
             }
@@ -33,22 +44,12 @@ public class Leitor {
         return valor;
     }
 
-    public static long lerLong(String msg){
-        System.out.println(msg);
-        return lerLong();
-    }
-
-    public static long lerLong(){
-        return new Scanner(System.in).nextLong();
-    }
-
-
-    public static int lerInt(String msg, String msgErro, int min, int max) {
+    public static int lerInt(String msg, int min, int max) {
         int valor;
         do {
             valor = lerInt(msg);
             if (valor < min || valor > max) {
-                System.out.println(msgErro);
+                System.out.println("Valor inválido.");
             }
         } while (valor < min || valor > max);
         return valor;

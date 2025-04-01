@@ -1,9 +1,9 @@
 public class Placa {
-    final double PRECO_INICIAL = 20.0;
-    String codigo;
-    int pinos;
-    int entradasAnalogicas;
-    boolean produzSinalMLP;
+    private final double PRECO_INICIAL = 20.0;
+    private String codigo;
+    private int pinos;
+    private int entradasAnalogicas;
+    private boolean produzSinalMLP;
 
     public Placa(String codigo) {
         this.codigo = codigo;
@@ -20,12 +20,44 @@ public class Placa {
         return precoFinal;
     }
 
+    public String getCodigo() {
+        return codigo;
+    }
+
+    public void setCodigo(String codigo) {
+        this.codigo = codigo;
+    }
+
+    public int getPinos() {
+        return pinos;
+    }
+
+    public void setPinos(int pinos) {
+        this.pinos = pinos;
+    }
+
+    public int getEntradasAnalogicas() {
+        return entradasAnalogicas;
+    }
+
+    public void setEntradasAnalogicas(int entradasAnalogicas) {
+        this.entradasAnalogicas = entradasAnalogicas;
+    }
+
+    public boolean isProduzSinalMLP() {
+        return produzSinalMLP;
+    }
+
+    public void setProduzSinalMLP(boolean produzSinalMLP) {
+        this.produzSinalMLP = produzSinalMLP;
+    }
+
     public String toString() {
         String string =
-                "Código: " + this.codigo +
-                "\nQuantidade de pinos digitais: " + this.pinos +
-                "\nQuantidade de entradas analógicas: " + this.entradasAnalogicas +
-                "\nProduz sinal MLP? " + (this.produzSinalMLP ? "Sim" : "Não") + "\n";
+                "Código: " + this.getCodigo() +
+                "\nQuantidade de pinos digitais: " + this.getPinos() +
+                "\nQuantidade de entradas analógicas: " + this.getEntradasAnalogicas() +
+                "\nProduz sinal MLP? " + (this.isProduzSinalMLP() ? "Sim" : "Não") + "\n";
         return string;
     }
 }

@@ -1,11 +1,20 @@
 import java.sql.SQLOutput;
 
 public class GrupoPlacas {
-    Placa[] placas;
+
+    private Placa[] placas;
+
+    public Placa[] getPlacas() {
+        return placas;
+    }
+
+    public void setPlacas(Placa[] placas) {
+        this.placas = placas;
+    }
 
     public boolean validarCodigo(String codigo){
         for (Placa placa : this.placas){
-            if (codigo.equals(placa.codigo)) {
+            if (codigo.equals(placa.getCodigo())) {
                 return false;
             }
         }
@@ -24,13 +33,13 @@ public class GrupoPlacas {
         int custoTotal = 0;
         if (produzSinal == 1) {
             for (Placa placa : this.placas) {
-                if (placa.produzSinalMLP) {
+                if (placa.isProduzSinalMLP()) {
                     custoTotal += placa.getPreco();
                 }
             }
         } else {
             for (Placa placa : this.placas) {
-                if (!placa.produzSinalMLP) {
+                if (!placa.isProduzSinalMLP()) {
                     custoTotal += placa.getPreco();
                 }
             }
@@ -44,14 +53,14 @@ public class GrupoPlacas {
         int i = 0;
         if (produzSinal == 1) {
             for (Placa placa : this.placas) {
-                if (placa.produzSinalMLP) {
+                if (placa.isProduzSinalMLP()) {
                     placas[i] = placa;
                     i++;
                 }
             }
         } else {
             for (Placa placa : this.placas) {
-                if (!placa.produzSinalMLP) {
+                if (!placa.isProduzSinalMLP()) {
                     placas[i] = placa;
                     i++;
                 }
@@ -64,13 +73,13 @@ public class GrupoPlacas {
         int counter = 0;
         if (produzSinal == 1) {
             for (Placa placa : this.placas) {
-                if (placa.produzSinalMLP) {
+                if (placa.isProduzSinalMLP()) {
                     counter++;
                 }
             }
         } else {
             for (Placa placa : this.placas) {
-                if (!placa.produzSinalMLP) {
+                if (!placa.isProduzSinalMLP()) {
                     counter++;
                 }
             }
