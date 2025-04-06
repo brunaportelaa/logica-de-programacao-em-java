@@ -2,6 +2,8 @@ public class Atleta {
 
     //Tempo em minutos para maior precisão
     final int TEMPO_MAX_PROVA_ELITE = 300;
+    final static int MIN_LENGTH_NOME = 3;
+    final static int MAX_LENGTH_NOME = 50;
 
     private long numInscricao;
     private String nome;
@@ -9,8 +11,8 @@ public class Atleta {
     private int idade;
 
     public Atleta (long numInscricao, String nome) {
-        this.numInscricao = numInscricao;
-        this.nome = nome;
+        this.setNumInscricao(numInscricao);
+        this.setNome(nome);
     }
 
     public long getNumInscricao() {
@@ -27,6 +29,13 @@ public class Atleta {
 
     public void setNome(String nome) {
         this.nome = nome;
+    }
+
+    public static boolean validarNome(String nome) {
+        if (nome.length() < MIN_LENGTH_NOME || nome.length() > MAX_LENGTH_NOME) {
+            return false;
+        }
+        return true;
     }
 
     public double getTempoProva() {
@@ -50,10 +59,10 @@ public class Atleta {
     }
 
     public String toString() {
-        return "N. Inscrição: " + this.numInscricao +
-                "\nNome: " + this.nome +
-                "\nIdade: " + this.idade +
-                "\nTempo de prova: " + this.tempoProva +
+        return "N. Inscrição: " + this.getNumInscricao() +
+                "\nNome: " + this.getNome() +
+                "\nIdade: " + this.getIdade() +
+                "\nTempo de prova: " + this.getTempoProva() +
                 "\nElite: " + (this.isElite() ? "Sim" : "Não") + "\n";
     }
 }

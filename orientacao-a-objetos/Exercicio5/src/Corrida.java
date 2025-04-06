@@ -1,3 +1,4 @@
+import java.util.ArrayList;
 import java.util.Arrays;
 
 public class Corrida {
@@ -22,41 +23,45 @@ public class Corrida {
     }
 
     public boolean validarNumInscricao(long numInscricao) {
-        System.out.println("Validando número de inscrição");
         for (Atleta atleta : this.getAtletas()) {
             if (numInscricao == atleta.getNumInscricao()) {
-                System.out.println("Número inválido");
                 return false;
             }
         }
-        System.out.println("Número válido");
         return true;
     }
 
-    public Atleta[] sortAtletaByElite(int isElite) {
+    public Atleta[] filterAtletaByElite(int isElite) {
         Atleta[] atletasSelecionados = new Atleta[countAtletaByElite(isElite)];
         int i = 0;
-        for (Atleta atleta : this.atletas) {
-            if (isElite == 1 && atleta.isElite()) {
-                atletasSelecionados[i] = atleta;
-                i++;
-            } else {
-                if (isElite == 2 && !atleta.isElite()) {
-                    atletasSelecionados[i] = atleta;
+        if (isElite == 1) {
+            for (Atleta atleta : this.atletas) {
+                if (atleta.isElite()) {
+                    atletasSelecionados[i++] = atleta;
                     i++;
+                }
+            }
+        } else {
+            for (Atleta atleta : this.atletas) {
+                if (!atleta.isElite()) {
+                    atletasSelecionados[i++] = atleta;
                 }
             }
         }
         return atletasSelecionados;
-    }
+}
 
     public int countAtletaByElite(int isElite) {
         int counter = 0;
-        for (Atleta atleta : atletas) {
-            if (isElite == 1 && atleta.isElite()) {
-                counter++;
-            } else {
-                if (isElite == 0 && !atleta.isElite()) {
+        if (isElite == 0 ){
+            for (Atleta atleta : atletas) {
+                if (!atleta.isElite()) {
+                    counter++;
+                }
+            }
+        } else {
+            for (Atleta atleta : atletas) {
+                if (atleta.isElite()) {
                     counter++;
                 }
             }
@@ -72,6 +77,16 @@ public class Corrida {
             }
         }
         return melhorAtleta;
+    }
+
+    public ArrayList<Atleta> getAtletaByIdade(int idadeMinima, int idadeMaxima) {
+        ArrayList<Atleta> atletasSelecionados = new ArrayList<>();
+        for (Atleta atleta : getAtletas()) {
+            if (atleta.getIdade() >= idadeMinima && atleta.getIdade() <= idadeMaxima){
+                atletasSelecionados.add(atleta);
+            }
+        }
+        return atletasSelecionados;
     }
 
     public double getMedia() {
