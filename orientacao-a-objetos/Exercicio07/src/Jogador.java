@@ -12,10 +12,10 @@ public class Jogador {
     }
 
     public Jogador(String nome, int idade, int qtdGols, String pais) {
-        this.nome = nome;
-        this.idade = idade;
-        this.qtdGols = qtdGols;
-        this.pais = pais;
+        setNome(nome);
+        setIdade(idade);
+        setQtdGols(qtdGols);
+        setPais(pais);
     }
 
     public String getNome(){
@@ -105,4 +105,12 @@ public class Jogador {
         }
     }
 
+    public String toString() {
+        String string = "Nome: " + this.getNome() +
+                "\nIdade: " + this.getIdade() +
+                "\nQuantidade de gols: " + this.getQtdGols() +
+                "\nPaís: " + this.getPais() +
+                "\nQualificação: " + this.getQualificacaoDescricao(getQualificacao()) + "\n";
+        return string;
+    }
 }
