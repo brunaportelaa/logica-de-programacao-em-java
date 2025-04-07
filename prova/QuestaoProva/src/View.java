@@ -1,10 +1,13 @@
+import java.util.ArrayList;
+
 public class View {
 
     public static Armazenamento cadastrarArmazenamento() {
         Armazenamento armazenamento = new Armazenamento();
         boolean continuar = true;
         do {
-            armazenamento.adicionar(cadastrarPasta());
+            ArrayList<Pasta> pastas = armazenamento.getPastas();
+            pastas.add(cadastrarPasta());
             int opcao = Leitor.lerInt("Gostaria de cadastrar mais uma pasta?\n[1] - Sim\n[2] - Não", "Valor inválido", 1, 2);
             if (opcao == 2) {
                 continuar = false;

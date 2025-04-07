@@ -1,3 +1,5 @@
+import java.util.ArrayList;
+
 public class App {
     public static void main(String[] args) {
 
@@ -21,7 +23,7 @@ public class App {
                     break;
                 case 4:
                     int ano = Leitor.lerInt("Insira para o qual gostaria de exibir os documentos", "Valor inválido", 1900);
-                    Pasta[] pastasSelecionadas = armazenamento.sortPastasByAno(ano);
+                    ArrayList<Pasta> pastasSelecionadas = armazenamento.sortPastasByAno(ano);
                     Printer.print(pastasSelecionadas);
                     break;
                 case 5:

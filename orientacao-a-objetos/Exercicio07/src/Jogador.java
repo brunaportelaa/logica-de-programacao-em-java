@@ -1,3 +1,5 @@
+import java.security.PublicKey;
+
 public class Jogador {
     private final int LIMITE_FRACO = 15;
     private final int LIMITE_BOM = 31;
@@ -20,6 +22,11 @@ public class Jogador {
 
     public String getNome(){
         return this.nome;
+    }
+
+    public String getPrimeiroNome() {
+        String[] nome = this.getNome().split(" ");
+        return nome[0];
     }
 
     public void setNome(String nome) {
@@ -106,11 +113,11 @@ public class Jogador {
     }
 
     public String toString() {
-        String string = "Nome: " + this.getNome() +
+        String string = "Nome: " + this.getPrimeiroNome() +
                 "\nIdade: " + this.getIdade() +
                 "\nQuantidade de gols: " + this.getQtdGols() +
                 "\nPaís: " + this.getPais() +
                 "\nQualificação: " + this.getQualificacaoDescricao(getQualificacao()) + "\n";
-        return string;
+        return string.toUpperCase();
     }
 }

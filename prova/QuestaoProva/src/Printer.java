@@ -1,3 +1,5 @@
+import java.util.ArrayList;
+
 public class Printer {
     public static void print(Armazenamento armazenamento){
         for (Pasta pasta : armazenamento.getPastas()) {
@@ -5,7 +7,7 @@ public class Printer {
         }
     }
 
-    public static void print(Pasta[] pastas) {
+    public static void print(ArrayList<Pasta> pastas) {
         for (Pasta pasta: pastas) {
             print(pasta);
         }

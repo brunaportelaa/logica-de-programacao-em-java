@@ -1,20 +1,19 @@
+import java.util.ArrayList;
 import java.util.Arrays;
 
 public class Armazenamento {
-    private Pasta[] pastas;
+    private ArrayList<Pasta> pastas;
 
     public Armazenamento() {
-        this.pastas = new Pasta[0];
+        this.pastas = new ArrayList<Pasta>();
     }
 
-    public Pasta[] getPastas(){
+    public ArrayList<Pasta> getPastas(){
         return this.pastas;
     }
 
-    public void adicionar(Pasta pasta) {
-        Pasta[] novasPastas = Arrays.copyOf(this.pastas, this.pastas.length + 1);
-        novasPastas[novasPastas.length - 1] = pasta;
-        this.pastas = novasPastas;
+    public void setPastas(ArrayList<Pasta> pastas){
+        this.pastas = pastas;
     }
 
     public int countPastasByAno(int ano) {
@@ -27,13 +26,13 @@ public class Armazenamento {
         return total;
     }
 
-    public Pasta[] sortPastasByAno(int ano) {
+    public ArrayList<Pasta> sortPastasByAno(int ano) {
         int totalPastas = countPastasByAno(ano);
-        Pasta[] pastasSelecionadas = new Pasta[totalPastas];
+        ArrayList<Pasta> pastasSelecionadas = new ArrayList<Pasta>();
         int i = 0;
         for (Pasta pasta : this.pastas) {
             if (pasta.getAno() == ano) {
-                pastasSelecionadas[i] = pasta;
+                pastasSelecionadas.add(pasta);
                 i++;
             }
         }
