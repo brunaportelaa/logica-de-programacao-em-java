@@ -8,14 +8,13 @@ public class FeedBack {
         public FeedBack(String texto, double nota){
                 setTexto(texto);
                 setNota(nota);
-
         }
 
         public double getNota() {
                 return nota;
         }
 
-        public void setNota(double nota) {
+        private void setNota(double nota) {
                 this.nota = nota;
         }
 
@@ -23,7 +22,7 @@ public class FeedBack {
                 return texto;
         }
 
-        public void setTexto(String texto) {
+        private void setTexto(String texto) {
                 this.texto = texto;
         }
 
