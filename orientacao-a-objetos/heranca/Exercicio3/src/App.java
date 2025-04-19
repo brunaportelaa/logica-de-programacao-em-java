@@ -6,7 +6,7 @@ public class App {
 
         System.out.println("A área do retângulo é: " + retangulo.calcularArea());
         System.out.println("A área do triângulo retângulo é: " + trianguloRetangulo.calcularArea());
-        System.out.println("A hipotenusa do triângulo retângulo é: " + trianguloRetangulo.calcularArea());
+        System.out.println("A hipotenusa do triângulo retângulo é: " + trianguloRetangulo.calcularHipotenusa());
 
     }
 }
