@@ -47,13 +47,15 @@ public class ManipulaString {
         }
     }
 
-    public String toUpperCase() {
-        return this.getFrase().toUpperCase();
-    }
-
     public int countPalavras() {
         String[] palavras = this.getFrase().split(" ");
         return palavras.length;
     }
+
+    public String toUpperCase() {
+        return this.getFrase().toUpperCase();
+    }
+
+
 
 }
