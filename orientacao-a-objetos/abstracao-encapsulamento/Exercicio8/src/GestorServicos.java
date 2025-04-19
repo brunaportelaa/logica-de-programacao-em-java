@@ -43,22 +43,11 @@ public class GestorServicos {
     }
 
     public ArrayList<Servico> searchDescricao(String inputBusca) {
-        String[] termosBusca = inputBusca.split(" ");
         ArrayList<Servico> servicosSelecionados = new ArrayList<>();
-        int i = 0;
         for (Servico servico : this.getServicos()) {
-            String[] termosDescricao = servico.getDescricao().split(" ");
-            for (String termoDescricao : termosDescricao){
-                for (String termoBusca : termosBusca) {
-                    if (termoDescricao.equalsIgnoreCase(termoBusca)) {
-                        i++;
-                    }
-                }
-            }
-            if (i == termosBusca.length) {
+            if (servico.getDescricao().contains(inputBusca)){
                 servicosSelecionados.add(servico);
             }
-            i = 0;
         }
         return servicosSelecionados;
     }

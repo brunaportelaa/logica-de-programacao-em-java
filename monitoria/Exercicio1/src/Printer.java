@@ -1,6 +1,5 @@
 public class Printer {
      public static void print(Anatel anatel) {
-         System.out.println("---------SISTEMA DE CONTROLE DE FRANQUIAS ANATEL---------");
          print(anatel.getFranquias());
      }
 
