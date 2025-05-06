@@ -5,15 +5,17 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="e35edfe0-56cc-4673-8d5a-c6f0478942c0" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/src/Competidor.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/CompetidorOlimpico.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/CompetidorParalimpico.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Leitor.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Main.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Printer.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/SistemaCompeticao.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/View.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/.gitignore" beforeDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Exercicio5/src/App.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Exercicio5/src/Leitor.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Exercicio5/src/Printer.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Exercicio5/src/Programa.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Exercicio5/src/ProgramaCMaisMais.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Exercicio5/src/ProgramaDotNet.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Exercicio5/src/RegistroProgramas.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Exercicio5/src/View.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/CompetidorOlimpico.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/CompetidorOlimpico.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/View.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/View.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -23,36 +25,36 @@
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/../../.." />
   </component>
-  <component name="GitHubPullRequestSearchHistory"><![CDATA[{
-  "lastFilter": {
-    "state": "OPEN",
-    "assignee": "brunaportelaa"
+  <component name="GitHubPullRequestSearchHistory">{
+  &quot;lastFilter&quot;: {
+    &quot;state&quot;: &quot;OPEN&quot;,
+    &quot;assignee&quot;: &quot;brunaportelaa&quot;
   }
-}]]></component>
-  <component name="GithubPullRequestsUISettings"><![CDATA[{
-  "selectedUrlAndAccountId": {
-    "url": "https://github.com/brunaportelaa/logica-de-programacao-em-java.git",
-    "accountId": "90dbb8c8-d93c-4606-8fff-832fe227bca7"
+}</component>
+  <component name="GithubPullRequestsUISettings">{
+  &quot;selectedUrlAndAccountId&quot;: {
+    &quot;url&quot;: &quot;https://github.com/brunaportelaa/logica-de-programacao-em-java.git&quot;,
+    &quot;accountId&quot;: &quot;90dbb8c8-d93c-4606-8fff-832fe227bca7&quot;
   }
-}]]></component>
-  <component name="ProjectColorInfo"><![CDATA[{
-  "associatedIndex": 6
-}]]></component>
+}</component>
+  <component name="ProjectColorInfo">{
+  &quot;associatedIndex&quot;: 6
+}</component>
   <component name="ProjectId" id="2wP49ol3eQK0SAIqSzpxD2HXWc4" />
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "Application.Main.executor": "Run",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "RunOnceActivity.git.unshallow": "true",
-    "git-widget-placeholder": "main",
-    "kotlin-language-version-configured": "true",
-    "last_opened_file_path": "/Users/cidadania4u/IdeaProjects/logica-de-programacao-em-java/orientacao-a-objetos/polimorfismo/Exercicio4/src"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;Application.Main.executor&quot;: &quot;Run&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.git.unshallow&quot;: &quot;true&quot;,
+    &quot;git-widget-placeholder&quot;: &quot;main&quot;,
+    &quot;kotlin-language-version-configured&quot;: &quot;true&quot;,
+    &quot;last_opened_file_path&quot;: &quot;/Users/cidadania4u/IdeaProjects/logica-de-programacao-em-java/orientacao-a-objetos/polimorfismo/Exercicio4/src&quot;
   }
-}]]></component>
+}</component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
       <recent name="$PROJECT_DIR$/src" />

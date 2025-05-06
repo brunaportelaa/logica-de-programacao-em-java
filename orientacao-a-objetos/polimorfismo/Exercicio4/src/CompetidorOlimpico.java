@@ -7,6 +7,8 @@ public class CompetidorOlimpico extends Competidor{
         setQtdTitulosMundiais(qtdTitulosMundiais);
     }
 
+    public CompetidorOlimpico() {};
+
     public int getQtdTitulosMundiais() {
         return qtdTitulosMundiais;
     }

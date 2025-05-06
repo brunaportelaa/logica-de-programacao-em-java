@@ -36,14 +36,16 @@ public class View {
     public static CompetidorOlimpico cadastrarCompetidorOlimpico(){
         Competidor competidor = cadastrarCompetidor();
         int qtdTitulosMundiais = Leitor.lerInt("Número de títulos");
-        CompetidorOlimpico competidorOlimpico = new CompetidorOlimpico(competidor.getNumero(), competidor.getNome(), competidor.getSexo(), competidor.getIdade(), qtdTitulosMundiais);
+        CompetidorOlimpico competidorOlimpico = (CompetidorOlimpico) competidor;
+        competidorOlimpico.setQtdTitulosMundiais(qtdTitulosMundiais);
         return competidorOlimpico;
     }
 
     public static CompetidorParalimpico cadastrarCompetidorParalimpico(){
         Competidor competidor = cadastrarCompetidor();
         String nomeResponsavel = Leitor.lerString("Nome do responsável: ");
-        CompetidorParalimpico competidorParalimpico = new CompetidorParalimpico(competidor.getNumero(), competidor.getNome(), competidor.getSexo(), competidor.getIdade(), nomeResponsavel);
+        CompetidorParalimpico competidorParalimpico = (CompetidorParalimpico) competidor;
+        competidorParalimpico.setNomeResponsavel(nomeResponsavel);
         return competidorParalimpico;
     }
 
