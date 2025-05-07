@@ -4,19 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="e35edfe0-56cc-4673-8d5a-c6f0478942c0" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/../Exercicio5/src/App.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../Exercicio5/src/Leitor.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../Exercicio5/src/Printer.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../Exercicio5/src/Programa.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../Exercicio5/src/ProgramaCMaisMais.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../Exercicio5/src/ProgramaDotNet.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../Exercicio5/src/RegistroProgramas.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../Exercicio5/src/View.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/CompetidorOlimpico.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/CompetidorOlimpico.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/View.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/View.java" afterDir="false" />
-    </list>
+    <list default="true" id="e35edfe0-56cc-4673-8d5a-c6f0478942c0" name="Changes" comment="" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
